@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_DISCUSS_MESSAGE_DEC_FRIENDSHIP_TT"/>
+			<Set Text="Doubles income from [ICON_RESEARCH] Research Agreements and [ICON_GOLD] Mutual Open Borders with this leader.[NEWLINE][NEWLINE]An alliance promotes friendly diplomacy and deters outside aggressors. Allies may request diplomatic or economic assistance, and failure to support your ally may upset them."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_OPEN_BORDERS_TT" />
+			<Set Text="With [COLOR_YIELD_GOLD]mutual open borders[/COLOR], 1% of the combined gross [ICON_GOLD] Income of both players adds to your gold rate (2% if Allied).[NEWLINE][NEWLINE]Allows the other player's units to pass through your territory.[NEWLINE][NEWLINE](Lasts {1_Num} turns.)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_RESCH_AGREEMENT_TT"/>
+			<Set Text="[ICON_GOLD] Cost: {1_cost}[NEWLINE][NEWLINE]3% of the combined research of both players adds to your [ICON_RESEARCH] Science rate (6% if Allied).[NEWLINE][NEWLINE](Lasts {2_turns} turns.)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_BARB_KILLED" />
+			<Set Text="You killed Barbarians near {1_CivName:textkey}! They are grateful, and you gained +12[ICON_INFLUENCE] Influence with them!" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NTFN_RA_FREE_TECH" />
+			<Set Text="Your Research Agreement with {1_CivName:textkey} has expired." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_PEACE_TREATY" />
+			<Set Text="PEACE TREATY (20 turns)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_PEACE_TREATY_TURNS" />
+			<Set Text="PEACE TREATY (20 turns)" />
+		</Update>
+	</Language_en_US>
+</GameData>

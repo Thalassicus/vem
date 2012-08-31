@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<IconTextureAtlases>
+		<Row>
+			<Atlas>VEM_BUILDING_ATLAS</Atlas>
+			<IconSize>256</IconSize>
+			<Filename>VEM_Buildings256.DDS</Filename>
+			<IconsPerRow>4</IconsPerRow>
+			<IconsPerColumn>2</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>VEM_BUILDING_ATLAS</Atlas>
+			<IconSize>214</IconSize>
+			<Filename>VEM_Buildings214.dds</Filename>
+			<IconsPerRow>4</IconsPerRow>
+			<IconsPerColumn>2</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>VEM_BUILDING_ATLAS</Atlas>
+			<IconSize>128</IconSize>
+			<Filename>VEM_Buildings128.dds</Filename>
+			<IconsPerRow>4</IconsPerRow>
+			<IconsPerColumn>2</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>VEM_BUILDING_ATLAS</Atlas>
+			<IconSize>80</IconSize>
+			<Filename>VEM_Buildings80.dds</Filename>
+			<IconsPerRow>4</IconsPerRow>
+			<IconsPerColumn>2</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>VEM_BUILDING_ATLAS</Atlas>
+			<IconSize>64</IconSize>
+			<Filename>VEM_Buildings64.dds</Filename>
+			<IconsPerRow>4</IconsPerRow>
+			<IconsPerColumn>2</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>VEM_BUILDING_ATLAS</Atlas>
+			<IconSize>45</IconSize>
+			<Filename>VEM_Buildings45.dds</Filename>
+			<IconsPerRow>4</IconsPerRow>
+			<IconsPerColumn>2</IconsPerColumn>
+		</Row>
+	</IconTextureAtlases>
+</GameData>

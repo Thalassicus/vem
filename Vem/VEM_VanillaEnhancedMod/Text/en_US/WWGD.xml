@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 3/17/2012 3:01:23 AM -->
+<GameData>
+	<Language_en_US>
+		<Update>
+			<Where Tag="TXT_KEY_HANDICAP_DEITY_HELP" />
+			<Set Text="I would even survive a zombie apocalypse." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HANDICAP_IMMORTAL_HELP" />
+			<Set Text="I like pain." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HANDICAP_EMPEROR_HELP" />
+			<Set Text="Test my limits." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HANDICAP_KING_HELP" />
+			<Set Text="The gloves are coming off." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HANDICAP_PRINCE_HELP" />
+			<Set Text="Give me a challenge." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HANDICAP_WARLORD_HELP" />
+			<Set Text="Let me relax." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HANDICAP_CHIEFTAIN_HELP" />
+			<Set Text="Cakewalk." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HANDICAP_SETTLER_HELP" />
+			<Set Text="Let me learn the game." />
+		</Update>
+	</Language_en_US>
+</GameData>

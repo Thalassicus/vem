@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 3/9/2012 4:03:54 PM -->
+<GameData>
+	<Policy_Flavors>
+
+	</Policy_Flavors>
+	<Policies>
+		<Update>
+			<Where Type="POLICY_PIETY" />
+			<Set ExtraHappiness="3" />
+		</Update>
+		<Update>
+			<Where Type="POLICY_ORGANIZED_RELIGION" />
+			<Set HappinessToCulture="200" />
+		</Update>
+		<Update>
+			<Where Type="POLICY_MANDATE_OF_HEAVEN" />
+			<Set HappinessToCulture="0" />
+		</Update>
+		<Update>
+			<Where Type="POLICY_THEOCRACY" />
+			<Set CultureWonderMultiplier="10"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_REFORMATION" />
+			<Set GoldenAgeMeterMod="-25"
+				 GoldenAgeTurns="10"
+				 CultureWonderMultiplier="0"
+				 />
+		</Update>
+	</Policies>
+	<Policy_PrereqPolicies>
+
+	</Policy_PrereqPolicies>
+	<Policy_BuildingClassYieldChanges>
+		<Row>
+			<PolicyType>POLICY_ORGANIZED_RELIGION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_ORGANIZED_RELIGION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_ORGANIZED_RELIGION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MONASTERY</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</Policy_BuildingClassYieldChanges>
+	<Policy_BuildingClassCultureChanges>
+		<Delete PolicyType="POLICY_FREE_RELIGION" />
+	</Policy_BuildingClassCultureChanges>
+	<Policy_BuildingClassHappiness>
+		<Delete PolicyType="POLICY_ORGANIZED_RELIGION" />
+		<Row>
+			<PolicyType>POLICY_MANDATE_OF_HEAVEN</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MANDATE_OF_HEAVEN</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MANDATE_OF_HEAVEN</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MONASTERY</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+	</Policy_BuildingClassHappiness>
+	<Policy_BuildingClassProductionModifiers>
+		<Delete PolicyType="POLICY_PIETY" />
+		<!--
+		<Row>
+			<PolicyType>POLICY_ORGANIZED_RELIGION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
+			<ProductionModifier>25</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_ORGANIZED_RELIGION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<ProductionModifier>25</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_ORGANIZED_RELIGION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_OPERA_HOUSE</BuildingClassType>
+			<ProductionModifier>25</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_ORGANIZED_RELIGION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MUSEUM</BuildingClassType>
+			<ProductionModifier>25</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_ORGANIZED_RELIGION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_BROADCAST_TOWER</BuildingClassType>
+			<ProductionModifier>25</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_ORGANIZED_RELIGION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MONASTERY</BuildingClassType>
+			<ProductionModifier>25</ProductionModifier>
+		</Row>
+		-->
+	</Policy_BuildingClassProductionModifiers>
+	<Policy_SpecialistYieldChanges>
+		<Row>
+			<PolicyType>POLICY_FREE_RELIGION</PolicyType>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Policy_SpecialistYieldChanges>
+	<Policy_ImprovementCultureChanges>
+		<Row>
+			<PolicyType>POLICY_FREE_RELIGION</PolicyType>
+			<ImprovementType>IMPROVEMENT_LANDMARK</ImprovementType>
+			<CultureChange>5</CultureChange>
+		</Row>
+	</Policy_ImprovementCultureChanges>
+	<Policy_BuildingClassYieldModifiers>
+		<Delete PolicyType="POLICY_THEOCRACY" />
+		<Row>
+			<PolicyType>POLICY_THEOCRACY</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldMod>10</YieldMod>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_THEOCRACY</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MONASTERY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldMod>10</YieldMod>
+		</Row>
+	</Policy_BuildingClassYieldModifiers>
+</GameData>

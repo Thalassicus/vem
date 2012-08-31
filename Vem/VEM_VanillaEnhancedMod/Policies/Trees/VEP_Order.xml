@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Policy_Flavors>
+
+	</Policy_Flavors>
+	<Policies>
+		<Update>
+			<Where Type="POLICY_ORDER" />
+			<Set ExtraHappinessPerCity="0"
+				 OneShot="true"
+				 IncludesOneShotFreeUnits="true"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_UNITED_FRONT" />
+			<Set TradeRouteGoldModifier="0"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_PLANNED_ECONOMY" />
+			<Set BuildingGoldMaintenanceMod="-25"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_NATIONALISM" />
+			<Set Description="TXT_KEY_POLICY_POPULISM"
+				 Civilopedia="TXT_KEY_POLICY_POPULISM_TEXT"
+				 Help="TXT_KEY_POLICY_POPULISM_HELP"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_SOCIALISM" />
+			<Set BuildingGoldMaintenanceMod="0" />
+		</Update>
+		<Update>
+			<Where Type="POLICY_COMMUNISM" />
+			<Set BuildingProductionModifier="0" />
+		</Update>
+		<!--
+		<Update>
+			<Where Type="POLICY_ORDER_FINISHER" />
+			<Set TradeRouteGoldModifier="50"
+				 />
+		</Update>
+		-->
+	</Policies>
+	<Policy_PrereqPolicies>
+
+	</Policy_PrereqPolicies>
+	<Policy_CityYieldChanges>
+		<Delete PolicyType="POLICY_COMMUNISM" />
+		<Delete PolicyType="POLICY_ORDER_FINISHER" />
+	</Policy_CityYieldChanges>
+	<Policy_YieldModifiers>
+		<Row>
+			<PolicyType>POLICY_ORDER_FINISHER</PolicyType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>20</Yield>
+		</Row>
+	</Policy_YieldModifiers>
+	<Policy_BuildingClassHappiness>
+		<Row>
+			<PolicyType>POLICY_SOCIALISM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_WORKSHOP</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_SOCIALISM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FACTORY</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+	</Policy_BuildingClassHappiness>
+	<Policy_BuildingClassYieldModifiers>
+		<Delete PolicyType="POLICY_PLANNED_ECONOMY" />
+		<Row>
+			<PolicyType>POLICY_SOCIALISM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_WORKSHOP</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldMod>25</YieldMod>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_SOCIALISM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FACTORY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldMod>25</YieldMod>
+		</Row>
+	</Policy_BuildingClassYieldModifiers>
+	<Policy_SpecialistYieldChanges>
+		<Row>
+			<PolicyType>POLICY_NATIONALISM</PolicyType>
+			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Policy_SpecialistYieldChanges>
+	<Policy_ImprovementYieldChanges>
+		<Row>
+			<PolicyType>POLICY_UNITED_FRONT</PolicyType>
+			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_UNITED_FRONT</PolicyType>
+			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<!--
+		<Row>
+			<PolicyType>POLICY_COMMUNISM</PolicyType>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		-->
+		<Row>
+			<PolicyType>POLICY_NATIONALISM</PolicyType>
+			<ImprovementType>IMPROVEMENT_MANUFACTORY</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>5</Yield>
+		</Row>
+	</Policy_ImprovementYieldChanges>
+	<Policy_FreeUnitClasses>
+		<Row>
+			<PolicyType>POLICY_ORDER</PolicyType>
+			<UnitClassType>UNITCLASS_ENGINEER</UnitClassType>
+			<Count>1</Count>
+		</Row>
+	</Policy_FreeUnitClasses>
+	<UnitPromotions>
+		<Update>
+			<Where Type="PROMOTION_NATIONALISM" />
+			<Set FriendlyLandsAttackModifier="20" />
+		</Update>
+	</UnitPromotions>
+	<!--
+	<Policy_FreeBuildingFlavor>
+		<Row>
+			<PolicyType>POLICY_COMMUNISM</PolicyType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<NumCities>-1</NumCities>
+		</Row>
+	</Policy_FreeBuildingFlavor>
+	-->
+</GameData>

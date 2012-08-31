@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 3/9/2012 4:03:39 PM -->
+<GameData>
+	<Policy_Flavors>
+		<Delete PolicyType="POLICY_HONOR" />
+		<Delete PolicyType="POLICY_WARRIOR_CODE" />
+		<Delete PolicyType="POLICY_DISCIPLINE" />
+		<Delete PolicyType="POLICY_MILITARY_CASTE" />
+		<Delete PolicyType="POLICY_MILITARY_TRADITION" />
+		<Delete PolicyType="POLICY_PROFESSIONAL_ARMY" />
+		<Row>
+			<PolicyType>POLICY_HONOR</PolicyType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_HONOR</PolicyType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_WARRIOR_CODE</PolicyType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_WARRIOR_CODE</PolicyType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_DISCIPLINE</PolicyType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_DISCIPLINE</PolicyType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_DISCIPLINE</PolicyType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_DISCIPLINE</PolicyType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MILITARY_CASTE</PolicyType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MILITARY_CASTE</PolicyType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MILITARY_CASTE</PolicyType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MILITARY_TRADITION</PolicyType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MILITARY_TRADITION</PolicyType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_PROFESSIONAL_ARMY</PolicyType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_PROFESSIONAL_ARMY</PolicyType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Policy_Flavors>
+	<Policies>
+		<Update>
+			<Where Type="POLICY_HONOR" />
+			<Set BarbarianCombatBonus="10"
+				 CultureFromBarbarianKills="400"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_HONOR_FINISHER" />
+			<Set GoldFromKills="0"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_WARRIOR_CODE" />
+			<Set GridX="1" />
+		</Update>
+		<Update>
+			<Where Type="POLICY_MILITARY_TRADITION" />
+			<Set GridX="3"
+				 GridY="1"
+				 ExpModifier="0"
+				 MilitaryProductionModifier="20"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_PROFESSIONAL_ARMY" />
+			<Set GridX="3"
+				 GridY="3"
+				 GoldFromKills="200"
+				 />
+		</Update>
+		<!--
+				 GoldFromKillsCostBased="0.10"
+		-->
+		<Update>
+			<Where Type="POLICY_MILITARY_CASTE" />
+			<Set GridX="3"/>
+		</Update>
+		<!--
+		<Update>
+			<Where Type="POLICY_MILITARY_CASTE" />
+			<Set GridX="3"
+				 GridY="3"
+				 HappinessPerGarrisonedUnit="0"
+				 GoldFromKills="0.25"
+				 CityCaptureCulture="50"
+				 CityCaptureCulturePerPop="10"
+				 CityCaptureCulturePerEra="50"
+				 PortraitIndex="21"
+				 />
+		</Update>
+		-->
+		<Update>
+			<Where Type="POLICY_DISCIPLINE" />
+			<Set GridX="5"
+				 GridY="1" />
+		</Update>
+	</Policies>
+	<Policy_UnitCombatProductionModifiers>
+		<Delete PolicyType="POLICY_WARRIOR_CODE" />
+	</Policy_UnitCombatProductionModifiers>
+	<UnitPromotions>
+		<Update>
+			<Where Type="PROMOTION_ADJACENT_BONUS" />
+			<Set AdjacentMod="20" />
+		</Update>
+	</UnitPromotions>
+	<Policy_PrereqPolicies>
+		<Delete PolicyType="POLICY_MILITARY_TRADITION" />
+		<Update>
+			<Where PolicyType="POLICY_MILITARY_CASTE" PrereqPolicy="POLICY_DISCIPLINE" />
+			<Set PrereqPolicy="POLICY_MILITARY_TRADITION" />
+		</Update>
+	</Policy_PrereqPolicies>
+	<Policy_ImprovementYieldChanges>
+		<Row>
+			<PolicyType>POLICY_WARRIOR_CODE</PolicyType>
+			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>3</Yield>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_WARRIOR_CODE</PolicyType>
+			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>3</Yield>
+		</Row>
+	</Policy_ImprovementYieldChanges>
+	<Policy_FreePromotionUnitClasses>
+		<Row>
+			<PolicyType>POLICY_WARRIOR_CODE</PolicyType>
+			<UnitClass>UNITCLASS_GREAT_GENERAL</UnitClass>
+			<PromotionType>PROMOTION_MOBILITY</PromotionType>
+		</Row>
+	</Policy_FreePromotionUnitClasses>
+	<Policy_BuildingClassHappiness>
+		<Delete PolicyType="POLICY_PROFESSIONAL_ARMY" />
+		<!--
+		<Row>
+			<PolicyType>POLICY_HONOR_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_VICEROY</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_HONOR_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_WALLS</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_HONOR_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_HONOR_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_ARSENAL</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_HONOR_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MILITARY_BASE</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		-->
+		<Row>
+			<PolicyType>POLICY_HONOR_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_COLOSSEUM</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+	</Policy_BuildingClassHappiness>
+	<Policy_BuildingClassYieldChanges>
+		<Row>
+			<PolicyType>POLICY_HONOR_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_COLOSSEUM</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>4</YieldChange>
+		</Row>
+	</Policy_BuildingClassYieldChanges>
+</GameData>

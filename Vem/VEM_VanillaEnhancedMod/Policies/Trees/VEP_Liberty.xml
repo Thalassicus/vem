@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 3/9/2012 4:03:32 PM -->
+<GameData>
+	<Policy_Flavors>
+		<Delete PolicyType="POLICY_LIBERTY" />
+		<Row>
+			<PolicyType>POLICY_LIBERTY</PolicyType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_LIBERTY</PolicyType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Policy_Flavors>
+	<Policies>
+		<Update>
+			<Where Type="POLICY_LIBERTY" />
+			<Set CulturePerCity="2"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_COLLECTIVE_RULE" />
+			<Set CapitalSettlerProductionModifier="0"
+				 SettlerProductionModifier="0"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_LIBERTY_FINISHER" />
+			<Set IncludesOneShotFreeUnits="0"
+				 NumFreeGreatPeople="0"
+				 UnhappinessMod="0"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_MERITOCRACY" />
+			<Set HappinessPerTradeRoute="100"
+				 UnhappinessMod="-5"
+				 Description="TXT_KEY_POLICY_REPRESENTATION"
+				 Civilopedia="TXT_KEY_CIV5_POLICY_REPRESENTATION_TEXT"
+				 Help="TXT_KEY_POLICY_REPRESENTATION_HELP"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_REPUBLIC" />
+			<Set BuildingProductionModifier="0"
+				 Description="TXT_KEY_POLICY_MERITOCRACY"
+				 Civilopedia="TXT_KEY_CIV5_POLICY_MERITOCRACY_TEXT"
+				 Help="TXT_KEY_POLICY_MERITOCRACY_HELP"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_REPRESENTATION" />
+			<Set NumCitiesPolicyCostDiscount="-20"
+				 GoldenAgeTurns="10"
+				 Description="TXT_KEY_POLICY_REPUBLIC"
+				 Civilopedia="TXT_KEY_CIV5_POLICY_REPUBLIC_TEXT"
+				 Help="TXT_KEY_POLICY_REPUBLIC_HELP"
+				 />
+		</Update>
+	</Policies>
+	<Policy_CityYieldChanges>
+		<Update>
+			<Where PolicyType="POLICY_REPUBLIC" YieldType="YIELD_PRODUCTION" />
+			<Set Yield="2" />
+		</Update>
+		<!--
+		<Row>
+			<PolicyType>POLICY_MERITOCRACY</PolicyType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		-->
+	</Policy_CityYieldChanges>
+	<Policy_UnitClassProductionModifiers>
+		<Row>
+			<PolicyType>POLICY_COLLECTIVE_RULE</PolicyType>
+			<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+			<ProductionModifier>20</ProductionModifier>
+		</Row>
+	</Policy_UnitClassProductionModifiers>
+	<Policy_BuildingClassYieldChanges>
+		<Row>
+			<PolicyType>POLICY_REPUBLIC</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_WALLS</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_REPUBLIC</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_REPUBLIC</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_ARSENAL</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_REPUBLIC</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MILITARY_BASE</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</Policy_BuildingClassYieldChanges>
+	<Policy_BuildingClassHappiness>
+		<!--
+		<Row>
+			<PolicyType>POLICY_MERITOCRACY</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_COLOSSEUM</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MERITOCRACY</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_THEATRE</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MERITOCRACY</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_STADIUM</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		-->
+	</Policy_BuildingClassHappiness>
+	<Policy_FreeBuildingFlavor>
+		<Row>
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType>
+			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+			<NumCities>-1</NumCities>
+		</Row>
+	</Policy_FreeBuildingFlavor>
+</GameData>
